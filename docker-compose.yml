@@ -5,4 +5,4 @@ services:
     environment:
       - SYSMON_DELAY=30
     volume:
-      - "config/config.yml":"/sysmonitor/config/config.yml"
+      - "./config/config.yml:/sysmonitor/config/config.yml"
