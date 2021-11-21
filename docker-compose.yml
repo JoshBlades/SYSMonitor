@@ -4,5 +4,5 @@ services:
     build: .
     environment:
       - SYSMON_DELAY=30
-    volume:
-      - "./config/config.yml:/sysmonitor/config/config.yml"
+    volumes:
+      - './config/config.yml:/sysmonitor/config/config.yml'
