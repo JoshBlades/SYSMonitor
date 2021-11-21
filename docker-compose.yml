@@ -3,4 +3,4 @@ services:
   sysmonitor:
     build: .
     environment:
-      SYSMON_DELAY=30
+      - SYSMON_DELAY=30

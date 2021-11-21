@@ -87,7 +87,7 @@ def main():
             if len(configuration['hardware']) > 1:
                 sleep(DEFAULT_DELAY)
 
-        sleep(DEFAULT_DELAY)
+        sleep(int(DEFAULT_DELAY))
 
 if __name__ == "__main__":
     main()
