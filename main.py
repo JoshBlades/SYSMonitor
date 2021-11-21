@@ -86,7 +86,7 @@ def main():
 
             print(json.dumps(log_data))
             if len(configuration['hardware']) > 1:
-                sleep(DEFAULT_DELAY)
+                sleep(int(DEFAULT_DELAY))
 
         sleep(int(DEFAULT_DELAY))
 
