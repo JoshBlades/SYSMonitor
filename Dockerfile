@@ -1,5 +1,5 @@
 FROM python:3
-WORKDIR /usr/src/app
+WORKDIR /sysmonitor
 
 COPY requirements.txt ./
 RUN pip3 install --no-cache-dir -r requirements.txt
