@@ -8,9 +8,10 @@ from time import sleep
 from sys import exit
 
 DEFAULT_DELAY = os.getenv('SYSMON_DELAY', 15)
+CONFIG_FILE_PATH = os.getenv('SYSMON_CONFIG', "config/config.yml")
 
 def load_config():
-    with open('config.yml', 'r') as file:
+    with open(CONFIG_FILE_PATH, 'r') as file:
         configuration = yaml.safe_load(file)
     
     if 'hardware' not in configuration:
