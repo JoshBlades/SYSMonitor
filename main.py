@@ -7,7 +7,7 @@ import json
 from time import sleep
 from sys import exit
 
-DEFAULT_DELAY = os.getenv('SYSMON_DELAY', 300)
+DEFAULT_CHECK_DELAY = os.getenv('SYSMON_DELAY', 300)
 CONFIG_FILE_PATH = os.getenv('SYSMON_CONFIG', "config/config.yml")
 
 def load_config():
@@ -86,9 +86,9 @@ def main():
 
             print(json.dumps(log_data))
             if len(configuration['hardware']) > 1:
-                sleep(int(DEFAULT_DELAY))
+                sleep(20)
 
-        sleep(int(DEFAULT_DELAY))
+        sleep(int(DEFAULT_CHECK_DELAY))
 
 if __name__ == "__main__":
     main()
