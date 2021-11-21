@@ -7,7 +7,7 @@ import json
 from time import sleep
 from sys import exit
 
-DEFAULT_DELAY = os.getenv('SYSMON_DELAY', 15)
+DEFAULT_DELAY = os.getenv('SYSMON_DELAY', 300)
 CONFIG_FILE_PATH = os.getenv('SYSMON_CONFIG', "config/config.yml")
 
 def load_config():
