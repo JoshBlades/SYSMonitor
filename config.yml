@@ -1,0 +1,12 @@
+---
+hardware:
+- name: 2201sys010
+  datacenter: rbx
+  notifications:
+  - example@example.org
+
+email:
+  server: mail.example.org
+  username: notify@example.org
+  password: "SuperSecretPassword"
+  port: 587

@@ -1,0 +1,6 @@
+version: "3"
+services:
+  sysmonitor:
+    build: .
+    environment:
+      SYSMON_DELAY=30
